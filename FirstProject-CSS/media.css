@@ -1,0 +1,126 @@
+/* Media Queries for Responsive Design */
+
+/* Small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    #navbar, #footer {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        text-align: center;
+    }
+    #nav-items, #footer-container {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    #main-header, .section {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+    #main-header .left, .section-content {
+        width: 90%;
+        left: 5%;
+        top: 50px;
+    }
+    #main-header .left .big-text, .section-title {
+        font-size: 40px;
+    }
+.list-of-games1, .list-of-games2{
+    display: flex;
+    flex-direction: column;
+}
+.discover-card{
+    width: 400px;
+}
+.discover-card p{
+    font-size: small;
+    width: 270px;
+}
+.image-carousel{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+}
+
+/* Medium devices (tablets, 600px to 900px) */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+    body {
+        font-size: 16px;
+    }
+    #navbar, #footer {
+        width: 90%;
+    }
+    #nav-items, #footer-container, .section-content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #main-header, .section {
+        text-align: center;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+    #main-header .left, .section-content {
+        width: 60%;
+        left: 20%;
+        top: 80px;
+    }
+    #main-header .left .big-text, .section-title {
+        font-size: 50px;
+    }
+    .list-of-games1, .list-of-games2{
+        display: flex;
+        flex-direction: column;
+    }
+    .discover-card{
+        width: 600px;
+    }
+    .discover-card p{
+        font-size: small;
+        width: 270px;
+    }
+    .image-carousel{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        gap: 20px;
+    }
+}
+
+/* Large devices (desktops, 900px and up) */
+@media only screen and (min-width: 901px) {
+    body {
+        font-size: 18px;
+    }
+    #navbar, #footer {
+        width: 80%;
+    }
+    #nav-items, #footer-container, .section-content {
+        display: flex;
+        flex-direction: row;
+    }
+    #main-header, .section {
+        text-align: left;
+        padding: 50px;
+        display: flex;
+        flex-direction: row;
+    }
+    #main-header .left, .section-content {
+        width: 40%;
+        left: 10%;
+        top: 100px;
+    }
+    #main-header .left .big-text, .section-title {
+        font-size: 70px;
+    }
+}
