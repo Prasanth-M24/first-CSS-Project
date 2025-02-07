@@ -1,0 +1,274 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: #2D1E6B;
+    font-family: 'Lato', 'sans-serif';
+    box-sizing: border-box;
+}
+#navbar{
+    margin: 0 auto;
+    width: 80%;
+    height: 10vh; /*it uses the 10% of the view port*/
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+#logo-container{
+    display: flex;
+    align-items: center;
+    gap: 0px;
+}
+#logo-container > h2{
+    margin-left: 0px;
+}
+#nav-items{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    width: 500px;
+    justify-content: space-between;
+    cursor:zoom-out;
+    font-weight: 300;
+}
+.right-nav{
+    align-items: center;
+    display: flex;
+}
+#main-header{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    color: white;
+}
+#main-header .left{
+    position: absolute;
+    width: 40%;
+    top: 100px;
+    left: 10%;
+    height: 100%;
+    
+}
+#main-header .left .big-text{
+    font-size: 70px;
+    color: white;
+
+}
+#main-header .left #overview{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 40px;
+    gap: 15px;
+}
+#main-header .left #overview .overview-items{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+#main-header .left #overview .overview-items h4{
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0px;
+    padding: 0px;
+}
+.gradient-text{
+    color: #ff00f2;
+}
+#main-header .left #overview .overview-items p{
+    font-weight: 300px;
+    padding: 0px;
+    margin: 0px;
+}
+#main-header .right{
+    width: 90%;
+    height: auto;
+    z-index: -10px;
+    mix-blend-mode: color-dodge;
+}
+#main-header .right img{
+    width: 100%;
+    height: 100vh;
+    margin-top: -11vh; /*doubt*/
+}
+.buttons{
+    display: flex;
+}
+.btn{
+    padding: 10px 20px;
+    margin: 10px 20px;
+    transform: skewX(-20deg);/*doubt*/
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #7d63f1;
+    color: white;
+}
+.btn1{
+    background-color: #2d1e6b;
+    background: linear-gradient(45deg, #7d63f1, #2c2c94 28%, #f805d0 97%);
+    /*doubt*/
+}
+.band{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding: 15px 10px;
+    margin-bottom: 100px;
+    border: 1px solid #ffffff40;
+    background: #ffffff40;
+    transform: rotate(-3deg);
+    box-shadow: 0 80px 32px 0 rgba(0, 17, 255, 0.37);
+    backdrop-filter: blur(4px);
+    color: white;
+}
+.band p{
+    background-color: inherit;
+    font-size: large;
+}
+.choose-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin: 0px;
+    text-align: center;
+    padding: 0px;
+}
+.choose-section-title{
+    font-size: 40px;
+    font-weight: 900px;
+    font-style: bold;
+}
+.section-discription{
+    width: 500px;
+    font-size: 18px;
+}
+.choose-section .image-carousel{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0px;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+.discover-section{
+    margin: 100px auto;
+    width: 70%;
+}
+.discover-card{
+    display: flex;
+    justify-content: flex-start;
+    text-align: justify;
+    align-items: center;
+    color: white;
+    border: 1px solid #ffffff40;
+    border-radius: 7px;
+    /* background: #35276D; */
+}
+.discover-card-details{
+    position: relative;
+    right: 75px;
+}
+.discover-card img{
+    margin-top: -70px;
+    width: 50%;
+    /* align-self: self-start; */
+    background: transparent;
+}
+.demo-card-section{
+    display: flex;
+    width: 75%;
+    /* margin-left: 30%; */
+    margin: 20px auto;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+.list-of-games1{
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    justify-content: space-between;
+}
+.list-of-games1 img{
+    margin-top: 10px;
+    width: 200px;
+    height: 225px;
+    position: relative;
+    left: 12px;
+}
+.list-of-games1 div{
+    width: 225px;
+    height: 315px;
+    background-color: #453585;
+    backdrop-filter: blur(40px);
+    
+}
+.list-of-games2{
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.list-of-games2 img{
+    margin-top: 10px;
+    width: 200px;
+    height: 225px;
+    position: relative;
+    left: 13px;
+}
+.list-of-games2 div{
+    width: 225px;
+    height: 315px;
+    background-color: #453585;
+    backdrop-filter: blur(40px);
+}
+.demo-play{
+    padding: 5px 5px;
+    margin: 4px 65px;
+    transform: skewX(-20deg);/*doubt*/
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #7d63f1;
+    color: white;
+    background-color: #2d1e6b;
+    background: linear-gradient(45deg, #7d63f1, #2c2c94 28%, #f805d0 97%);
+}
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+    color: white;
+    padding: 100px 10% 0 10%;
+}
+.about-and-links img{
+    width: 75px;
+    height: 75px;
+    display: flex;
+} */
+.about-and-links{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+.about{
+    width: 100%;
+    display: flex;
+}
+.info{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.info li a{
+    text-decoration: none;
+    color: white;
+}
+.footer-container.brand{
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
